@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500&display=swap');
+
+#faq .container {
+    display: flex;
+    padding: 60px 20px;
+    gap: 40px;
+    width: 100%;
+    height: fit-content;
+    min-width: 300px;
+}
+
+@media (max-width: 1439px) {
+    #faq .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+#faq-title-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#questions-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+}
+
+.question-item-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.question-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    min-height: 64px;
+    border-bottom: 1px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    gap: 20px;
+    align-items: center;
+}
+
+@media (any-hover: hover) {
+    .question-container:hover label.question {
+        color: #FF3C3C;
+    }
+
+    .question-container:hover .accordion-sign {
+        color: #FF3C3C;
+    }
+}
+
+.minus-icon {
+    width: 15.5px;
+    height: 1.5px;
+}
+
+.plus-icon {
+    width: 15.5px;
+    height: 15.5px;
+}
+
+
+label.question {
+    flex: 1;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    height: fit-content;
+}
+
+.accordion-sign {
+    width: 24px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.answer-container {
+    display: grid;
+    grid-template-rows: 0fr;
+    opacity: 0;
+
+    transition:
+        grid-template-rows 300ms ease,
+        opacity 300ms ease;
+}
+
+.answer-container > label {
+    overflow: hidden;
+}
+
+.answer-container.open {
+    grid-template-rows: 1fr;
+    opacity: 1;
+    padding-bottom: 20px;
+}
