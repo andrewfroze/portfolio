@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500&display=swap');   
+
+#price .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    padding: 60px 20px;
+    gap: 40px;
+}
+
+#price-description-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#prices-cards-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.prices-cards-pair-container {
+    width: fit-content;;
+    height: fit-content;
+    display: flex;
+    gap: 40px;
+}
+
+@media (max-width: 1440px) {
+    #prices-cards-container {
+        gap: calc(20px + (100vw - 1380px) / 3);
+    }
+
+    .prices-cards-pair-container {
+        gap: calc(20px + (100vw - 1380px) / 3);
+    }
+}
+
+@media (max-width: 1380px) {
+    #prices-cards-container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .prices-cards-pair-container {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .prices-cards-pair-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.price-card {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 500px;
+    border: 1px solid #222222;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+@media (any-hover: hover) {
+    .price-card:hover {
+        border-color: #FF3C3C;
+    }
+
+    .price-card:hover .book-button {
+        background-color: #FF3C3C;
+    }
+
+    .price-card:hover .book-button label {
+        color: #222222;
+    }
+}
+
+.price-card-title {
+    width: 100%;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+}
+
+.price-card-description-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.price-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.price-card li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.price-card li::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: currentColor;
+    flex-shrink: 0;
+}
+
+.package-price {
+    width: 100%;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+}
+
+.book-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.book-description {
+    font-family: 'Mulish';
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+}
+
+.book-button {
+    appearance: none;
+    -webkit-appearance: none;
+
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 0;
+    height: 60px;
+    width: 100%;
+    min-width: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #222222;
+}
+
+.book-button label{
+    width: 100%;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
