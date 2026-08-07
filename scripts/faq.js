@@ -38,17 +38,15 @@ function isOpened(questionContainer) {
 
 function restoreAccordion() {
     console.log("restore")
-    const savedQuestionIndex = localStorage.getItem(STORAGE_KEY);
+    let savedQuestionIndex = localStorage.getItem(STORAGE_KEY);
 
-    if (!Number.isInteger(savedQuestionIndex)) {
-        savedQuestionId = 0;
+    if (savedQuestionIndex == null || !isFinite(savedQuestionIndex) || savedQuestionIndex > questions.length - 1) {
+        savedQuestionIndex = 0;
     }
 
-    const index = savedQuestionIndex;
+    console.log(savedQuestionIndex);
 
-    console.log(index);
-
-    const question = questions[index];
+    const question = questions[savedQuestionIndex];
 
     if (question) {
         openAnswer(question);
