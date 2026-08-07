@@ -47,7 +47,7 @@ header .container {
     align-items: stretch;
 }
 
-nav ul {
+ul.links {
     display: flex;
     align-items: center;
     padding-inline-start: 0;
@@ -55,7 +55,7 @@ nav ul {
 }
 
 @media (any-hover: hover) {
-    nav a:hover {
+    ul.links a:hover {
         color: #FF3C3C;
     }
     
@@ -73,14 +73,15 @@ nav ul {
     }
 } 
 
-nav li {
+ul.links li {
     list-style: none;
     height: 60px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-nav a {
+ul.links a {
     width: fit-content;
     border-left: 1px;
     text-transform: uppercase;
@@ -99,7 +100,7 @@ nav a {
     justify-content: center;
 }
 
-footer nav {
+footer ul.links {
     padding: 20px;
 }
 
@@ -196,7 +197,7 @@ footer {
     height: 24px;
 }
 
-footer nav {
+footer ul.links {
     padding: 20px;
     display: flex;
     align-items: center;
@@ -291,7 +292,7 @@ footer nav {
         transform: rotate(-45deg);
     }
 
-    header nav ul {
+    header nav ul.links {
         position: fixed;
         top: 60px;
         right: 0;
@@ -305,15 +306,15 @@ footer nav {
         background-color: #222222;
     }
 
-    nav.open ul {
+    nav.open ul.links {
         width: 100%;
     }
 
-    nav li {
+    nav ul.links li {
         display: none;
     }
 
-    nav.open li {
+    nav.open ul.links li {
         display: flex;
     }
 
@@ -352,7 +353,7 @@ footer nav {
 }
 
 @media (max-width: 600px) {
-    #contacts nav ul {
+    #contacts ul.links {
         flex-direction: column;
     }
 }
