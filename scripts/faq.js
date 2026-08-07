@@ -20,13 +20,7 @@ function hideAnswer(questionContainer) {
     if (isOpened(questionContainer)) {
         const answerContainer = questionContainer.nextElementSibling;
         answerContainer.classList.remove('open');
-
-        const accordionSign = questionContainer.querySelector('.accordion-sign svg');
-        accordionSign.classList.remove('minus-icon');
-        accordionSign.classList.toggle('plus-icon');
-
-        const use = accordionSign.querySelector('use');
-        use.setAttribute('href', 'images/faq/icons.svg#plus');
+        questionContainer.classList.remove('open');
     }
 }
 
@@ -34,19 +28,12 @@ function openAnswer(questionContainer) {
     if (!isOpened(questionContainer)) {
         const answerContainer = questionContainer.nextElementSibling;
         answerContainer.classList.toggle('open');
-
-        const accordionSign = questionContainer.querySelector('.accordion-sign svg');
-        accordionSign.classList.remove('plus-icon');
-        accordionSign.classList.toggle('minus-icon');
-
-        const use = accordionSign.querySelector('use');
-        use.setAttribute('href', 'images/faq/icons.svg#minus');
+        questionContainer.classList.toggle('open');
     }
 }
 
 function isOpened(questionContainer) {
-    const answerContainer = questionContainer.nextElementSibling;
-    return answerContainer.classList.contains('open');
+    return questionContainer.classList.contains('open');
 }
 
 function restoreAccordion() {

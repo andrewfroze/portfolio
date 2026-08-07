@@ -114,3 +114,37 @@ label.question {
     opacity: 1;
     padding-bottom: 20px;
 }
+
+.accordion-sign {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+.accordion-sign::before,
+.accordion-sign::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: currentColor;
+    transition: opacity 0.3s ease;
+}
+
+.accordion-sign::before {
+    width: 16px;
+    height: 1.5px;
+    transform: translate(-50%, -50%);
+}
+
+.accordion-sign::after {
+    width: 1.5px;
+    height: 16px;
+    transform: translate(-50%, -50%);
+    transition: height 0.3s ease;
+}
+
+.question-container.open .accordion-sign::after {
+    height: 0;
+}
