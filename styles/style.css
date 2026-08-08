@@ -14,6 +14,11 @@ html {
     font-size: 24px;
 }
 
+h1, h2, h3, h4 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
 a, button, button label, .price-card, .question-container * {
     cursor: pointer;
 }
@@ -32,6 +37,14 @@ img {
     height: 60px;
     width: 60px;
     border-right: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    height: 16.37px;
+    width: 18.1px;
 }
 
 header {
@@ -68,7 +81,7 @@ ul.links {
         color: #222222;
     }
 
-    button:hover label {
+    button:hover {
         color: #222222;
     }
 } 
@@ -220,7 +233,7 @@ footer ul.links {
     }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1439px) {
     .hide-not-full-screen {
         display: none !important;
     }

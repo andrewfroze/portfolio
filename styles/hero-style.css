@@ -48,7 +48,6 @@
 
 #hero-main-statistic {
     display: flex;
-    flex-grow: fit-content;
     height: fit-content;
     gap: 60px;
 }
@@ -178,15 +177,9 @@
 }
 
 #hero-main-photo {
+    min-width: 220px;
     width: 280px;
-    height: 374px;
-}
-
-@media (max-width: 1100px) {
-    #hero-main-photo {
-        width: 220px;
-        height: 294px;
-    }
+    aspect-ratio: 280 / 374;
 }
 
 @media (max-width: 720px) {
@@ -211,5 +204,12 @@
 
     #scroll-down-link {
         display: none;
+    }
+}
+
+@media (max-width: 1400px) {
+
+    #hero-main-photo {
+        width: calc(((100vw - 50px) * 220px) / 720px);
     }
 }
