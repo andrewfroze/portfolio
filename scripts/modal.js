@@ -35,7 +35,7 @@ footerBookButton.addEventListener('click', () => {
 });
 
 modalBookButton.addEventListener('click', () => {
-    console.log(`You are booked: {"name": "${modalNameInput.value}", "phone": "${modalPhoneInput.value}"}}`)
+    alert(`You are booked: {"name": "${modalNameInput.value}", "phone": "${modalPhoneInput.value}"}}`)
     closeModal();
 
 });
