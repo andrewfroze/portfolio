@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg"  href="images/header/logo.svg">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/hero-style.css">
+    <link rel="stylesheet" href="styles/about-style.css">
+    <link rel="stylesheet" href="styles/portfolio-style.css">
+    <link rel="stylesheet" href="styles/price-style.css">
+    <link rel="stylesheet" href="styles/faq-style.css">
+    <link rel="stylesheet" href="styles/text-style.css">
+    <link rel="stylesheet" href="styles/modal.css">
+</head>
+<body class="light-background">
+    <header class="dark-background">
+        <div class="container">
+            <a class="logo" href="#"><img class="logo" src="images/header/logo.svg" alt="logo"></a>
+            <nav>
+                <div id="burger-wrapper">
+                    <div id="burger-icon">
+                        <span id="burger-line1" class="light-background"></span>
+                        <span id="burger-line2" class="light-background"></span>
+                    </div>
+                    <div id="cross-icon" class="hidden">
+                        <span id="cross-line1" class="light-background"></span>
+                        <span id="cross-line2" class="light-background"></span>
+                    </div>
+                </div>
+                <ul class="links">
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#price">Price</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <article id="hero" class="dark-background">
+            <div class="container">
+                <aside id="hero-side">
+                    <label class="rotated-text">Best Photographer by MAX</label>
+                    <span id="vertical-line"></span>
+                    <label class="rotated-text">2025</label>
+                </aside>
+                <div id="hero-main">
+                    <div id="hero-main-content-container">
+                        <div id="hero-main-content">
+                            <div id="hero-main-statistic">
+                                <div class="hero-main-statistic-value-container">
+                                    <label class="hero-main-statistic-value">+</label>
+                                    <div>
+                                        <label class="hero-main-statistic-value">487</label>
+                                        <label class="hero-main-statistic-value-name">Photo sessions</label>
+                                    </div>
+                                </div>
+                                <div class="hero-main-statistic-value-container">
+                                    <label class="hero-main-statistic-value">+</label>
+                                    <div>
+                                        <label class="hero-main-statistic-value">356</label>
+                                        <label class="hero-main-statistic-value-name">Satisfied clients</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <h1 id="hero-title">Professional photographer</h1>
+                            <h2 class="subtitle">Capture the Moment. Tell Your Story.</h2>
+                        </div>
+                        <a id="scroll-down-link" class="regular-text" href="#about">
+                            Scroll down
+                            <div class="arrow-icon">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="hero-photo-container hide-on-tablet center">
+                        <img src="images/hero/hero-photo1.png" alt="Hero photo" class="small-image">
+                    </div>
+                    <div class="hero-photo-container">
+                        <img id="hero-main-photo" src="images/hero/hero-photo2.png" alt="Hero photo">
+                        <label id="hero-greeting">Hi! I’m Vera, a photographer. For me, photography is more than just an image.</label>
+                    </div>
+                </div>
+            </div>    
+        </article>
+        <article id="about" class="light-background">
+            <div class="container">
+                <div class="about-part">
+                    <img src="images/about/about-photo1.png" alt="my photo">
+                    <div id="about-description-start">
+                        <h3 class="section-title">about me</h3>
+                        <label class="about-description regular-text">Hi! I’m Vera, a photographer with 5 years of experience. For me, photography is more than just an image. It’s a way to feel the moment, capture the atmosphere, and freeze time. I work with people, stories, and emotions.</label>
+                    </div>
+                </div>
+                <div class="about-part">
+                    <label class="regular-text">I shoot all across Europe. I love natural light, genuine emotions, and beautiful details. Each shot is a small piece of art. My goal is to create timeless images that tell your unique story.</label>
+                    <img src="images/about/about-photo2.png" alt="my photo">
+                    <label class="about-description show-not-full-screen regular-text">Seeing with heart. Shooting with soul.</label>
+                </div>
+                <div class="about-part hide-not-full-screen">   
+                    <img src="images/about/about-photo3.png" alt="my photo">
+                    <label class="about-description regular-text">Seeing with heart. Shooting with soul.</label>
+                </div>
+            </div>
+        </article>
+        <article id="portfolio" class="dark-background">
+            <div id="slider-ruler">
+                <div class="slide-area"></div>
+                <div class="slide-area"></div>
+            </div>
+            <div id="portfolio-container" class="container">
+                <div id="portfolio-description">
+                    <h3 class="section-title">my portfolio</h3>
+                    <h4 class="regular-text">Every shoot is a story. Here you’ll find portraits, love stories, family sessions, and more.</h4>
+                </div>
+                <div id="portfolio-slider-wrapper">
+                    <div id="portfolio-slider">
+                        <div class="slider-item padding-top-120">
+                            <img src="images/portfolio/portfolio1.png" alt="portfolio picture" class="big-image">
+                        </div>
+                        <div class="slider-item center">
+                            <img src="images/portfolio/portfolio2.png" alt="portfolio picture" class="small-image">
+                        </div>
+                        <div class="slider-item padding-top-120">
+                            <img src="images/portfolio/portfolio3.png" alt="portfolio picture" class="medium-image">
+                        </div>
+                        <div class="slider-item padding-bottom-120">
+                            <img src="images/portfolio/portfolio4.png" alt="portfolio picture" class="big-image">
+                        </div>
+                        <div class="slider-item padding-top-120">
+                            <img src="images/portfolio/portfolio5.png" alt="portfolio picture" class="medium-image">
+                        </div>
+                        <div class="slider-item center">
+                            <img src="images/portfolio/portfolio6.png" alt="portfolio picture" class="small-image">
+                        </div>
+                        <div class="slider-item center">
+                            <img src="images/portfolio/portfolio7.png" alt="portfolio picture" class="medium-image">
+                        </div>
+                        <div class="slider-item padding-top-120">
+                            <img src="images/portfolio/portfolio8.png" alt="portfolio picture" class="big-image">
+                        </div>
+                        <div class="slider-item center">
+                            <img src="images/portfolio/portfolio9.png" alt="portfolio picture" class="small-image">
+                        </div>
+                        <div class="slider-item center">
+                            <img src="images/portfolio/portfolio10.png" alt="portfolio picture" class="medium-image">
+                        </div>
+                        <div class="slider-item padding-top-120">
+                            <img src="images/portfolio/portfolio11.png" alt="portfolio picture" class="medium-image">
+                        </div>
+                        <div class="slider-item padding-bottom-120">
+                            <img src="images/portfolio/portfolio12.png" alt="portfolio picture" class="big-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="price" class="light-background">
+            <div class="container">
+                <div id="price-description-container">
+                    <h3 class="section-title">Packages & Pricing</h3>
+                    <h4 class="regular-text">Choose the package that suits your story. All options are customizable to your needs.</h4>
+                </div>
+                <div id="prices-cards-container">
+                    <div class="prices-cards-pair-container">
+                        <div class="price-card">
+                            <div class="price-card-description-container">
+                                <label class="price-card-title">Mini</label>
+                                <ul>
+                                    <li class="regular-text">Up to 1 hour of shooting</li>
+                                    <li class="regular-text">1 outfit / 1 location</li>
+                                    <li class="regular-text">20 edited photos</li>
+                                    <li class="regular-text">Online gallery</li>
+                                    <li class="regular-text">Delivery within 7 days</li>
+                                </ul>
+                                <label class="package-price">€150</label>
+                            </div>
+                            <div class="book-container">
+                                <label class="book-description">For short sessions and quick results</label>
+                                <button id="book-mini" class="book-button">Book now</button>
+                            </div>
+                        </div>
+                        <div class="price-card">
+                            <div class="price-card-description-container">
+                                <label class="price-card-title">Classic</label>
+                                <ul>
+                                    <li class="regular-text">Up to 2 hours of shooting</li>
+                                    <li class="regular-text">2 outfits / 2 locations</li>
+                                    <li class="regular-text">40+ edited photos</li>
+                                    <li class="regular-text">Online gallery</li>
+                                    <li class="regular-text">Pre-shoot consultation</li>
+                                    <li class="regular-text">Posing guidance</li>
+                                    <li class="regular-text">Delivery within 10 days</li>
+                                </ul>
+                                <label class="package-price">€280</label>
+                            </div>
+                            <div class="book-container">
+                                <label class="book-description">Perfect for couples, portraits, or lifestyle</label>
+                                <button id="book-classic" class="book-button">Book now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prices-cards-pair-container">
+                        <div class="price-card">
+                            <div class="price-card-description-container">
+                                <label class="price-card-title">Story</label>
+                                <ul>
+                                    <li class="regular-text">Up to 4 hours of shooting</li>
+                                    <li class="regular-text">3–4 outfits and locations</li>
+                                    <li class="regular-text">80+ edited photos</li>
+                                    <li class="regular-text">Online gallery + backup link</li>
+                                    <li class="regular-text">Custom route planning</li>
+                                    <li class="regular-text">Moodboard and styling help</li>
+                                    <li class="regular-text">Includes breaks and travel time</li>
+                                    <li class="regular-text">Delivery within 14 days</li>
+                                </ul>
+                                <label class="package-price">€450</label>
+                            </div>
+                            <div class="book-container">
+                                <label class="book-description">For when you want to capture everything</label>
+                                <button id="book-story" class="book-button">Book now</button>
+                            </div>
+                        </div>
+                        <div class="price-card">
+                            <div class="price-card-description-container">
+                                <label class="price-card-title">Wedding</label>
+                                <ul>
+                                    <li class="regular-text">Up to 8 hours of shooting</li>
+                                    <li class="regular-text">All key moments covered</li>
+                                    <li class="regular-text">250+ artistically edited photos</li>
+                                    <li class="regular-text">Custom timeline planning</li>
+                                    <li class="regular-text">Online gallery + USB drive</li>
+                                    <li class="regular-text">Delivery within 21 days</li>
+                                    <li class="regular-text">Extras: photo album, prints</li>
+                                    <li class="regular-text">Optional second-day shoot</li>
+                                </ul>
+                                <label class="package-price">€900</label>
+                            </div>
+                            <div class="book-container">
+                                <label class="book-description">Full-day or partial wedding coverage</label>
+                                <button id="book-wedding" class="book-button">Book now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="faq" class="dark-background">
+            <div class="container">
+                <div id="faq-title-container">
+                    <h3 class="section-title">Frequently Asked Questions</h3>
+                    <h4 class="regular-text">Everything You Wanted to Ask (and a Bit More)</h4>
+                </div>
+                <div id="questions-container">
+                    <div class="question-item-container">
+                        <div class="question-container">
+                            <label class="question">How do I book a shoot?</label>
+                            <div class="accordion-sign"></div>
+                        </div>
+                        <div class="answer-container">
+                            <label class="regular-text">
+                                Super simple – just message me through any convenient platform (Instagram, Telegram, WhatsApp, or the contact form on this site). We’ll discuss your preferred date, city, and session type. Once confirmed, I’ll reserve the date for you and send over preparation tips.
+                            </label>
+                        </div>
+                    </div>
+                    <div class="question-item-container">
+                        <div class="question-container">
+                            <label class="question">Can I choose the location myself?</label>
+                            <div class="accordion-sign"></div>
+                        </div>
+                        <div class="answer-container">
+                            <label class="regular-text">
+                                Absolutely! If there’s a special place you love or have in mind — I’m happy to shoot there. If you’re unsure, I can suggest beautiful spots with great lighting and atmosphere, tailored to your vision and mood.
+                            </label>
+                        </div>
+                    </div>
+                    <div class="question-item-container">
+                        <div class="question-container">
+                            <label class="question">How long does the shoot take?</label>
+                            <div class="accordion-sign"></div>
+                        </div>
+                        <div class="answer-container">
+                            <label class="regular-text">
+                                That depends on the package you choose. On average, sessions last from 1 to 4 hours. We’ll plan the pace and type of shoot together — from relaxed city strolls and love stories to more dynamic or editorial sessions.
+                            </label>
+                        </div>
+                    </div>
+                    <div class="question-item-container">
+                        <div class="question-container">
+                            <label class="question">When will I receive the photos?</label>
+                            <div class="accordion-sign"></div>
+                        </div>
+                        <div class="answer-container">
+                            <label class="regular-text">
+                                You’ll receive your edited photos within 7–14 days. For event and wedding sessions — up to 30 days. I deliver them in a stylish online gallery, where you can download them in full quality or easily share with friends and family.
+                            </label>
+                        </div>
+                    </div>
+                    <div class="question-item-container">
+                        <div class="question-container">
+                            <label class="question">Will you help me pose?</label>
+                            <div class="accordion-sign"></div>
+                        </div>
+                        <div class="answer-container">
+                            <label class="regular-text">
+                                Definitely! I’ll guide you gently throughout the session — where to look, how to move, how to relax. The goal is to make you feel comfortable and natural. My approach is relaxed, and I’ll never force awkward poses. The result? Real, expressive, and beautiful photos.
+                            </label>
+                        </div>
+                    </div>
+                    <div class="question-item-container">
+                        <div class="question-container">
+                            <label class="question">What should I wear?</label>
+                            <div class="accordion-sign"></div>
+                        </div>
+                        <div class="answer-container">
+                            <label class="regular-text">
+                                After booking, I’ll send you a style guide with suggestions for colors, textures, and combinations. The most important thing is that you feel confident in your outfit. I’m also happy to help you coordinate looks or plan something cohesive for couples or groups.
+                            </label>
+                        </div>
+                    </div>
+                    <div class="question-item-container">
+                        <div class="question-container">
+                            <label class="question">Do you retouch the photos?</label>
+                            <div class="accordion-sign"></div>
+                        </div>
+                        <div class="answer-container">
+                            <label class="regular-text">
+                                Yes, all photos are color-corrected and lightly retouched. My editing style is clean and natural — no overdone filters or fake skin. Just you, at your best. Extra retouching is available upon request.
+                            </label>
+                        </div>
+                    </div>
+                    <div class="question-item-container">
+                        <div class="question-container">
+                            <label class="question">Can I get the raw files?</label>
+                            <div class="accordion-sign"></div>
+                        </div>
+                        <div class="answer-container">
+                            <label class="regular-text">
+                                I don’t deliver RAW files. My work includes not only shooting, but also careful selection and editing to create a complete and polished result. You’ll receive only the best images, ready for printing, sharing, or publishing.
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer id="contacts">
+        <div id="sign-up-label-container" class="light-background">
+            <div class="container">
+                <label class="subtitle">Like my portfolio? Sign up for a shoot!</label>
+            </div>
+        </div>
+        <div id="book-container" class="light-background">
+            <div class="container">
+                <input class="name-input input" placeholder="your name">
+                <input class="phone-input input" placeholder="+1">
+                <button id="book-button" class="book-button">Book now</button>
+            </div>
+        </div>
+        <div id="contact-links" class="dark-background">
+            <div class="container">
+                <ul class="links">
+                    <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                    <li><a href="https://t.me" target="_blank">Telegram</a></li>
+                    <li><a href="https://wa.me/12349843572" target="_blank">WhatsApp</a></li>
+                    <li><a href="" target="_blank">Europe</a></li>
+                    <li><a href="tel:+12349843572">+1 234 9843572</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div id="overlay">
+        <div id="modal">
+            <div id="modal-close-button">
+                <span id="close-line1" class="dark-background"></span>
+                <span id="close-line2" class="dark-background"></span>
+            </div>
+            <div id="modal-input-container">
+                <label id="modal-title" class="subtitle">Like my portfolio? Sign up for a shoot!</label>
+                <input class="name-input input" placeholder="your name">
+                <input class="phone-input input" placeholder="+1">
+                <button id="modal-book-button" class="book-button">Book now</button>
+            </div>
+            
+        </div>
+    </div>
+    <script src="scripts/faq.js"></script>
+    <script src="scripts/slider.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/modal.js"></script>
+</body>
+</html>
